@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- swiper js -->
+    <title>E-commerce product page</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo-part flex">
+        <div class="hamburger">
+          <img src="images/icon-menu.svg" alt="" />
+        </div>
+        <div class="logo">
+          <img src="images/logo.svg" alt="" />
+        </div>
+        <div class="desk-nav hide">
+          <ul class="pc-ul-nav">
+            <li class="nav-items"><a href="#">collections</a></li>
+            <li class="nav-items"><a href="#">men</a></li>
+            <li class="nav-items"><a href="#">women</a></li>
+            <li class="nav-items"><a href="#">about</a></li>
+            <li class="nav-items"><a href="#">contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-profile-sect flex">
+        <div class="cart">
+          <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+              fill="#69707D"
+              fill-rule="nonzero"
+            />
+          </svg>
+          <div class="items-value"></div>
+        </div>
+        <div class="avatar">
+          <img src="images/image-avatar.png" alt="" />
+        </div>
+      </div>
+      <div class="mobile-nav hide">
+        <div class="close">
+          <img src="images/icon-close.svg" alt="" />
+        </div>
+        <ul class="mobile-ul-nav">
+          <li class="nav-items"><a href="#">collections</a></li>
+          <li class="nav-items"><a href="#">men</a></li>
+          <li class="nav-items"><a href="#">women</a></li>
+          <li class="nav-items"><a href="#">about</a></li>
+          <li class="nav-items"><a href="#">contact</a></li>
+        </ul>
+      </div>
+      <div class="overlay hide"></div>
+      <div class="cart-info-holder hidden">
+        <div class="cart-head">
+          <p>cart</p>
+        </div>
+        <div class="cart-info-empty">
+          <p>your cart is empty</p>
+        </div>
+        <div class="cart-filled">
+          <div class="cart-prod">
+            <img src="images/image-product-1-thumbnail.jpg" alt="dd" />
+            <div class="flexx">
+              <span class="aut">Autumn Limited Edition Sneakers</span>
+              <p class="summary">
+                <span class="price"></span><span>x</span
+                ><span class="amount"></span
+                ><span
+                  class="totalamount"
+                  style="font-weight: 700; color: hsl(220, 13%, 13%)"
+                ></span>
+              </p>
+            </div>
+            <img class="delete" src="images/icon-delete.svg" alt="" />
+          </div>
+          <div>
+            <button class="check-out">check-out</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="mobile-product-slide">
+        <!-- Slider main container -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/image-product-1.jpg" alt="product" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/image-product-2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/image-product-3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/image-product-4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="desktop-slide">
+        <div class="slide-container">
+          <div class="slide-show-case">
+            <img src="images/image-product-1.jpg" alt="" />
+          </div>
+          <div class="thumbs thumb-one" data-thumb="images/image-product-1.jpg">
+            <img src="images/image-product-1-thumbnail.jpg" alt="" />
+          </div>
+          <div class="thumbs thumb-two" data-thumb="images/image-product-2.jpg">
+            <img src="images/image-product-2-thumbnail.jpg" alt="" />
+          </div>
+          <div
+            class="thumbs thumb-three"
+            data-thumb="images/image-product-3.jpg"
+          >
+            <img src="images/image-product-3-thumbnail.jpg" alt="" />
+          </div>
+          <div
+            class="thumbs thumb-four"
+            data-thumb="images/image-product-4.jpg"
+          >
+            <img src="images/image-product-4-thumbnail.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <div class="product-info-text">
+        <h3>SNEAKER COMPANY</h3>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="product-prices">
+          <div class="subb">
+            <h1>$125.00</h1>
+            <div class="product-sub-price">
+              <p>50%</p>
+            </div>
+          </div>
+          <p class="end"><s>%250.00</s></p>
+        </div>
+        <div class="qty-add">
+          <div class="qty">
+            <div class="reduce"><img src="images/icon-minus.svg" alt="" /></div>
+            <div class="index">0</div>
+            <div class="add"><img src="images/icon-plus.svg" alt="" /></div>
+          </div>
+          <div class="add-cart">
+            <button class="addtocart" style="cursor: pointer">
+              <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                  fill="#69707D"
+                  fill-rule="nonzero"
+                />
+              </svg>
+              <a href="#">Add to cart</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <script src="js.js"></script> -->
+    <!-- <script></script> -->
+    <!-- <script src="js2.js"></script> -->
+    <!-- working the js XOXO shadrach -->
+    <script src="./src/main.js"></script>
+  </body>
+</html>
